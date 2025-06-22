@@ -33,7 +33,7 @@ const firmschema = new mongoose.Schema({
     vendor:[
         {
             type: mongoose.Schema.Types.ObjectId,
-            ref: 'vendor'
+            ref: 'Vendor'
         }
     ],
     products:[{
