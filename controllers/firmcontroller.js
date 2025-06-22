@@ -46,4 +46,4 @@ const deleteFirmById = async(req ,res) =>{
         res.status(500).json({error : "Internal server error" })
     }
 }
-module.exports= {addFirm: [upload.single('image'), addFirm]}
+module.exports= {addFirm: [upload.single('image'), addFirm],deleteFirmById}
