@@ -7,7 +7,7 @@ const firmroutes =require('./routes/firmroutes');
 const productRoutes = require('./routes/productRoutes');
 const path = require('path')
 const app=express()
-const PORT = process.env.Port || 4000;
+const PORT = process.env.PORT || 4000;
 dotenv.config();
 mongoose.connect(process.env.MONGO_URI)
 .then(()=> console.log("MonogDB connected successful!"))
