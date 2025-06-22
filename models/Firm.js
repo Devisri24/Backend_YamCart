@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const product = require('./product');
 const firmschema = new mongoose.Schema({
     firmName:{
         type: String,
