@@ -19,7 +19,7 @@ const productSchema = new mongoose.Schema({
     image:{
         type:String
     },bestseller:{
-        type: String
+        type: Boolean
     },
     description:{
         type : String

@@ -48,7 +48,8 @@ const addFirm = async(req, res) => {
 
         await vendor.save()
 
-        return res.status(200).json({ message: 'Firm Added successfully ', firmId, vendorFirmName });
+        return res.status(200).json({ message: 'Firm Added successfully ', firmId});
+
 
 
     } catch (error) {
