@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Backend_YamCart 🍽️
 
 This is the backend of the **YamCart** food delivery platform built using **Node.js**, **Express.js**, **MongoDB**, and **Multer** for image uploads.
@@ -34,3 +35,6 @@ MongoDB + Mongoose
 Multer (image uploads)
 JWT (authentication)
 Render (deployment)
+=======
+# Backend_YumCart
+>>>>>>> 5f5a45703ba1a36073dda76771fd2559cf4d9f48
