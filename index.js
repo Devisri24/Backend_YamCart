@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
 const vendorRoutes = require('./routes/vendorRoutes');
-const firmRoutes = require('../routes/firmRoutes');
+const firmRoutes = require('./routes/firmroutes');
 const productRoutes = require('./routes/productRoutes');
 
 dotEnv.config();
