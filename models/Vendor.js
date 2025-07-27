@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const vendorschema = new mongoose.Schema({
+const vendorSchema = new mongoose.Schema({
     username:{
         type:String,
         required:true
@@ -21,5 +21,5 @@ const vendorschema = new mongoose.Schema({
     ]
 });
 
-const Vendor = mongoose.model('Vendor',vendorschema);
+const Vendor = mongoose.model('Vendor',vendorSchema);
 module.exports=Vendor;

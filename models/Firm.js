@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const firmschema = new mongoose.Schema({
+const firmSchema = new mongoose.Schema({
     firmName:{
         type: String,
         required: true,
@@ -20,7 +20,7 @@ const firmschema = new mongoose.Schema({
     },
     region:{
         type:[{
-            type:  String,
+            type:String,
             enum:['south-indian','north-indian','chinese','bakery']
         }]
     },
@@ -41,5 +41,5 @@ const firmschema = new mongoose.Schema({
             ref: 'Product'
         }]
 });
-const Firm = mongoose.model('Firm',firmschema);
+const Firm = mongoose.model('Firm',firmSchema);
 module.exports=Firm 
