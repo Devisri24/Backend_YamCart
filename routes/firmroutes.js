@@ -3,7 +3,7 @@ const firmcontroller=require('../controllers/firmcontroller');
 const verifytoken=require('../middlewares/verifytoken');
 const router=express.Router();
 
-router.post('/add-firm',verifytoken,firmcontroller.addFirm);
+router.post('/add-firm',verifytoken,upload.single('image'),firmcontroller.addFirm);
 router.get('/uploads/:imageName',(req,res)=>{
     const imageName=req.params.imageName;
 res.setHeader('Content-Type', 'image/jpeg'); 
