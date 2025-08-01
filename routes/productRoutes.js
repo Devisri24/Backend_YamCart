@@ -2,7 +2,7 @@ const express=require('express')
 const productcontroller=require('../controllers/productcontroller');
 const router=express.Router();
 
-router.post('/add-product/:firmId',productcontroller.addProduct);
+router.post('/add-product/:id',productcontroller.addProduct);
 router.get('/:firmId/products',productcontroller.getProductByFirm);
 
 router.get('/uploads/:imageName',(req,res)=>{
