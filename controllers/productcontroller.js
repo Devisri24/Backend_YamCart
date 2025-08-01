@@ -18,7 +18,7 @@ const addProduct = async (req, res) => {
   try {
     const { productName, price, category, bestSeller, description } = req.body;
     const image = req.file ? req.file.filename : undefined;
-    const firmId = req.params.id;
+    const firmId = req.params.firmId;
 
 //     // Check if firmId is a valid ObjectId
 //     if (!mongoose.Types.ObjectId.isValid(firmId)) {
