@@ -1,6 +1,8 @@
 const express=require('express')
 const productcontroller=require('../controllers/productcontroller');
 const router=express.Router();
+const path = require('path');
+
 
 router.post('/add-product/:firmId',productcontroller.addProduct);
 router.get('/:firmId/products',productcontroller.getProductByFirm);

@@ -1,7 +1,7 @@
 const Product = require('../models/Product');
 const multer = require('multer');
 const Firm = require('../models/Firm');
-// const path = require('path');
+const path = require('path');
 // const mongoose = require('mongoose');  // for ObjectId validation
 
 const storage = multer.diskStorage({
