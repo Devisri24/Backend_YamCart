@@ -42,7 +42,7 @@ const addProduct = async (req, res) => {
     const savedProduct = await product.save();
     firm.products.push(savedProduct);
     await firm.save();
-    return res.status(200).json({ savedProduct });
+    res.status(200).json(savedProduct);
   } catch (error) {
     console.error(error);
     return res.status(500).json({ error: 'Internal server error' });

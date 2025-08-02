@@ -29,6 +29,7 @@ const addFirm=async(req,res)=>
         const firm=new Firm({
          firmName, area, category, region, offer,image,vendor:vendor._id
         })
+
           const savedFirm =await firm.save();
          const firmId=savedFirm._id;
          const vendorFirmName = savedFirm.firmName
@@ -47,7 +48,7 @@ const deleteFirmById=async(req,res)=>
   {
     try
     {
-         const firmId=req.params.id;
+         const firmId=req.params.firmId;
          const deletedFirm=await Firm.findByIdAndDelete(firmId);
          if(!deletedFirm)
          {
