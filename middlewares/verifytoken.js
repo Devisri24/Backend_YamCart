@@ -5,7 +5,7 @@ const jwt=require('jsonwebtoken');
 const dotEnv=require('dotenv');
 dotEnv.config();
 const secretkey=process.env.WhatIsYourName;
-const verifyToken=async(req, res, next)=>
+const verifytoken=async(req, res, next)=>
       {
           const token=req.headers.token;
           if(!token)
@@ -29,4 +29,4 @@ const verifyToken=async(req, res, next)=>
              return res.status(500).json({error:"invalid token"});
          }
     }
-module.exports=verifyToken;
+module.exports=verifytoken;
